@@ -74,7 +74,7 @@ header {
 #calculator button:active {
   background: var(--secondary-color);
   border-color: var(--secondary-color);
-  border-radius: 25%;
+  border-radius: 10%;
 }
 
 #calc-actions button {

@@ -1,3 +1,5 @@
+const { parentPort } = require("node:worker_threads");
+
 const defaultResult = 0;
 let currentResult = defaultResult;
 function add(){
@@ -79,6 +81,11 @@ function clear(){
     outputResult(currentResult, '');
 }
 
+function round(){
+    outputResult(parseInt(currentResult), `RoundOf(${currentResult})`);
+    currentResult = parseInt(currentResult);
+}
+
 addBtn.addEventListener('click',add);
 subtractBtn.addEventListener('click',sub);
 multiplyBtn.addEventListener('click',mul);
@@ -86,3 +93,4 @@ divideBtn.addEventListener('click',div);
 reminderBtn.addEventListener('click',rem);
 powerBtn.addEventListener('click',pow);
 clearBtn.addEventListener('click',clear);
+roundBtn.addEventListener('click',round);
