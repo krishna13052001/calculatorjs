@@ -7,6 +7,7 @@ const reminderBtn = document.getElementById('btn-reminder');
 const powerBtn = document.getElementById('btn-power');
 const clearBtn = document.getElementById('btn-clear');
 const roundBtn = document.getElementById('btn-round');
+const logBtn = document.getElementById('btn-log');
 const currentResultOutput = document.getElementById('current-result');
 const currentCalculationOutput = document.getElementById('current-calculation');
 

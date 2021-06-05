@@ -81,8 +81,13 @@ function clear(){
 }
 
 function round(){
-    outputResult(parseInt(currentResult), `RoundOf(${currentResult})`);
+    outputResult(parseInt(currentResult), `RoundOf(${currentResult}) = ${parseInt(currentResult)}`);
     currentResult = parseInt(currentResult);
+}
+
+function logFun(){
+    outputResult(Math.log(currentResult),`Log(${currentResult}) = ${Math.log(currentResult)}`)
+    currentResult = Math.log(currentResult);
 }
 
 addBtn.addEventListener('click',add);
@@ -93,3 +98,4 @@ reminderBtn.addEventListener('click',rem);
 powerBtn.addEventListener('click',pow);
 clearBtn.addEventListener('click',clear);
 roundBtn.addEventListener('click',round);
+logBtn.addEventListener('click',logFun);
