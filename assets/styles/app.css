@@ -28,8 +28,9 @@ header {
 }
 #results,
 #calculator {
-  margin: 2rem auto;
-  width: 40vw;
+  display: grid;
+  margin: 2vh auto;
+  /* width: 40vw; */
   max-width: 90%;
   border: 1px solid var(--primary-color);
   border-radius: 10px;
@@ -89,4 +90,11 @@ header {
   width: 70%;
   margin: auto;
   margin-top: 2rem;
+}
+
+@media(max-height: 570px){
+  header{
+    padding: 0rem; 
+    padding: 2px;
+  }
 }
