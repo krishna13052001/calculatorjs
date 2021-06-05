@@ -78,10 +78,16 @@ header {
 }
 
 #calc-actions button {
-  width: 4rem;
+  /* width: 4rem; */
+  border: 3px solid white;
 }
 
 #calc-actions {
-  margin-top: 1rem;
   text-align: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  width: 70%;
+  margin: auto;
+  margin-top: 2rem;
 }
