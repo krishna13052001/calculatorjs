@@ -1,8 +1,7 @@
-const { parentPort } = require("node:worker_threads");
-
 const defaultResult = 0;
 let currentResult = defaultResult;
 function add(){
+    console.log("hi i am in!!")
     const calcDescription = `${currentResult} + ${parseInt(userInput.value)}`;
     currentResult = currentResult+parseInt(userInput.value)
     userInput.value=null;
